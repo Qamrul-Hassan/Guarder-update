@@ -2,16 +2,19 @@
   "name": "guarder",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
-  "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-  "build": "chmod +x ./node_modules/.bin/tailwindcss && npx tailwindcss -i ./src/input.css -o ./public/output.css --minify"
-},
-
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --minify"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "tailwindcss": "^3.4.10"
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1"
   }
 }
